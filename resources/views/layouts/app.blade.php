@@ -14,7 +14,22 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
+    <header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Menu Item 1</a></li>
+            <li><a href="#">Menu Item 2</a></li>
+            <li><a href="#">Menu Item 3</a></li>
+        </ul>
+    </nav>
+</header>
     <body class="font-sans antialiased">
+    <div class="container">
+        @yield('content')
+    </div>
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
             @include('layouts.navigation')
 
@@ -33,4 +48,10 @@
             </main>
         </div>
     </body>
+...
+<footer>
+    <p>&copy; <?php echo date("Y"); ?> Mijn Website. Alle rechten voorbehouden.</p>
+</footer>
+...
+
 </html>
