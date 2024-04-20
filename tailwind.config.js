@@ -19,3 +19,18 @@ export default {
 
     plugins: [forms],
 };
+
+module.exports = {
+    theme: {
+        extend: {
+            backgroundColor: {
+                'custom-bg': '#f0f0f0', // Stel een aangepaste achtergrondkleur in
+            },
+            fontFamily: {
+                'custom-font': ['Arial', 'sans-serif'], // Stel een aangepast lettertype in
+            },
+        },
+    },
+    variants: {},
+    plugins: [],
+};
